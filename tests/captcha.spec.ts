@@ -24,7 +24,6 @@ test.group('Captcha services', () => {
     )
 
     const validateResult = await captcha.use('turnstile').validate()
-    console.log(validateResult)
     assert.isTrue(validateResult.success)
   })
 
@@ -47,7 +46,6 @@ test.group('Captcha services', () => {
     )
 
     const validateResult = await captcha.use('recaptcha').validate()
-    console.log(validateResult)
     assert.isTrue(validateResult.success)
   })
 })
