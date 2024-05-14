@@ -1,6 +1,6 @@
 {
   "name": "adonis-captcha-guard",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "AdonisJS v6 captcha addon",
   "main": "build/index.js",
   "engines": {

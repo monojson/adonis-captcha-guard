@@ -27,8 +27,8 @@ export async function configure(command: ConfigureCommand) {
 
     await codemods.defineEnvValidations({
         variables: providers.reduce<Record<string, string>>((result, provider) => {
-            result[`${provider.toUpperCase()}_SITE_KEY`] = 'Env.schema.string()'
-            result[`${provider.toUpperCase()}_SECRET`] = 'Env.schema.string()'
+            result[`${provider.toUpperCase()}_SITE_KEY`] = 'Env.schema.string.optional()'
+            result[`${provider.toUpperCase()}_SECRET`] = 'Env.schema.string.optional()'
             return result
         }, {})
     })
