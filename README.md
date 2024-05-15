@@ -9,7 +9,7 @@ This is a AdonisJS V6 package that protect your applications from bots and spam 
 - Google reCAPTCHA
   #### Step 1: Register a Google developer account
   #### Step 2: Get a site key and secret, follow this [documentation](https://www.google.com/recaptcha/admin/create)
-  >  [!IMPORTANT]
+  >  [!CAUTION]
   > Don't follow this [documentation](https://console.cloud.google.com/security/recaptcha) to create site key and secret, it will return an error when validate token. This is bad on Google's end that they have multiple sources for the same targeted facility, and one of those ways is sort of deprecated or not-working.
 
 ## Installation
@@ -60,3 +60,9 @@ import type { HttpContext } from '@adonisjs/core/http'
 ...
 ```
 
+## Contributors
+This project is contributed by u301 team for giving back to the AdonisJS community. [Create an issue](https://github.com/monojson/adonis-captcha-guard/issues/new) to give suggestions or feedback questions.
+
+
+## Who's Using
+- [u301](https://u301.link/fuWf)
